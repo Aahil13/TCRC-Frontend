@@ -1,0 +1,8 @@
+# Node
+node_modules
+*.json
+
+# cypress 
+cypress.config.js
+/cypress/fixtures
+/cypress/downloads
