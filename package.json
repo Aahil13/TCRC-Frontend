@@ -1,0 +1,22 @@
+{
+  "name": "tcrc-frontend",
+  "version": "1.0.0",
+  "description": "The cloud resume challenge frontend code",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aahil13/TCRC-Frontend.git"
+  },
+  "author": "aahil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aahil13/TCRC-Frontend/issues"
+  },
+  "homepage": "https://github.com/Aahil13/TCRC-Frontend#readme",
+  "devDependencies": {
+    "cypress": "^13.4.0"
+  }
+}
