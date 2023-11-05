@@ -44,11 +44,7 @@ jobs:
 
       - name: Deploy to S3
         run: |
-          ls
-          cd src
-          ls
-          pwd
-          # aws s3 sync /src s3://aahil-resume-001/
+          aws s3 sync /home/runner/work/TCRC-Frontend/TCRC-Frontend/src s3://aahil-resume-001/
         env:
           AWS_DEFAULT_REGION: ${{ secrets.AWS_REGION }}
 
