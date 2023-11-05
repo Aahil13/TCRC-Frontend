@@ -44,7 +44,8 @@ jobs:
 
       - name: Deploy to S3
         run: |
-          aws s3 sync /src s3://aahil-resume-001/
+          ls
+          # aws s3 sync /src s3://aahil-resume-001/
         env:
           AWS_DEFAULT_REGION: ${{ secrets.AWS_REGION }}
 
