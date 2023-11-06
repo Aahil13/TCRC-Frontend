@@ -42,6 +42,18 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_REGION }}
 
+      - name: Invalidate cache
+        uses: kersvers/s3-sync-with-cloudfront-invalidation@v1.0.0
+        with:
+          args: --acl public-read --follow-symlinks --delete
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+          DISTRIBUTION_ID: "EEQ20MB4Z2YNR"
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+          SOURCE_DIR: "src"
+
       - name: Deploy to S3
         run: |
           aws s3 sync /home/runner/work/TCRC-Frontend/TCRC-Frontend/src s3://aahil-resume-001/
