@@ -67,7 +67,8 @@ jobs:
         shell: bash
 
       - name: Cypress run
-        uses: cypress-io/github-action@v4
+        uses: cypress-io/github-action@v6
         with:
+          path: /home/runner/work/TCRC-Frontend/TCRC-Frontend/cypress/support/e2e/api.spec.js
           command: npx cypress run
           browser: chrome
