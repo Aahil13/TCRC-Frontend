@@ -51,8 +51,8 @@ jobs:
   smoke_test:
     runs-on: ubuntu-latest
     needs: deploy
-    environment:
-      name: smoke_test
+    # environment:
+    #   name: smoke_test
 
     steps:
       - name: Download Artifact
