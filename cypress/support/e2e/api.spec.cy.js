@@ -2,7 +2,7 @@ describe("TEST API", () => {
   it("Should return an updated value and update the database", () => {
     // Make a request to your API endpoint
     cy.request(
-      "https://o6k9oe1fue.execute-api.us-east-1.amazonaws.com/dev/resume_counter"
+      "https://10mdfd3dge.execute-api.us-east-1.amazonaws.com/dev/resume_counter"
     ).then((response) => {
       // Verify the response status code
       expect(response.status).to.equal(200);
