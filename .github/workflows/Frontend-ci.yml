@@ -68,7 +68,7 @@ jobs:
 
       - name: Change Directory
         run: |
-          cd /cypress/e2e
+          cd /home/runner/work/TCRC-Frontend/TCRC-Frontend/cypress/e2e
         shell: bash
 
       - name: Cypress run
