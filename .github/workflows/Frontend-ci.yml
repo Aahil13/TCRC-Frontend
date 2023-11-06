@@ -66,11 +66,6 @@ jobs:
           unzip -o deploy-artifact.zip -d .
         shell: bash
 
-      - name: Change Directory
-        run: |
-          cd /home/runner/work/TCRC-Frontend/TCRC-Frontend/cypress/support/e2e
-        shell: bash
-
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
