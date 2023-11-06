@@ -1,5 +1,5 @@
 fetch(
-  "https://g0u5nj2zi1.execute-api.us-east-1.amazonaws.com/dev/resume_counter",
+  "https://o6k9oe1fue.execute-api.us-east-1.amazonaws.com/dev/resume_counter",
   {
     method: "GET",
     headers: {
